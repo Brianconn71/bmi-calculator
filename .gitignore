@@ -1,4 +1,4 @@
-*.txt
+notes.txt
 .venv/
 __pycache__/
 *.sqlite3
