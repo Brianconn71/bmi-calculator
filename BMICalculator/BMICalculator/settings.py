@@ -11,9 +11,13 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# get overall base directory
+REAL_BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'BMICalculator',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +65,7 @@ ROOT_URLCONF = 'BMICalculator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(REAL_BASE_DIR, 'bmicalculator-frontend', 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,6 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(REAL_BASE_DIR, 'bmicalculator-frontend', 'build', 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
