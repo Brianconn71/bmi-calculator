@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-2t2i(qd4p^kn&r5hp-iw-n*6rn@0&ed!y&vmh1ao@lnz7-uyh%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'BMICalculator.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
 }
 
 
