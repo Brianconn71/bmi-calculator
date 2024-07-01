@@ -24,7 +24,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "BMICalculator/wsgi.py"
+        "dest": "BMICalculator/BMICalculator/wsgi.py"
       }
     ]
   }
