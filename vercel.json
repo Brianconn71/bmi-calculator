@@ -2,11 +2,12 @@
     "version": 2,
     "builds": [
       {
-        "src": "BMICalculator/BMICalculator/wsgi.py",
-        "use": "@vercel/python",
+        "src": "BMICalculator/build_files.sh",
+        "use": "@vercel/static-build",
         "config": {
         "maxLambdaSize": "15mb",
-        "runtime": "python3.10"
+        "runtime": "python3.10",
+        "distDir": "BMICalculator"
       }
       },
       {
