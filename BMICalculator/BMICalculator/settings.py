@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-2t2i(qd4p^kn&r5hp-iw-n*6rn@0&ed!y&vmh1ao@lnz7-uyh%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'www.the-bmi-calculator.com', 'the-bmi-calculator.com', 'localhost']
 
 
 # Application definition
