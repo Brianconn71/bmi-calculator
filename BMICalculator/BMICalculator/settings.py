@@ -71,7 +71,7 @@ ROOT_URLCONF = 'BMICalculator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(REAL_BASE_DIR, 'bmicalculator-frontend', 'build')],
+        'DIRS': [os.path.join(REAL_BASE_DIR, 'bmicalculator-frontend', 'build/static')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
