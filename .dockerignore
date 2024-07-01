@@ -1,0 +1,9 @@
+*/node_modules
+*/.venv
+*/.vscode
+*/.git
+*/.idea
+*.pyc
+*.pyo
+*.pyd
+__pycache__
