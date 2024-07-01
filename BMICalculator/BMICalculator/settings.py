@@ -13,8 +13,13 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
+from dotenv import load_dotenv
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env_path = load_dotenv(os.path.join(BASE_DIR, '.env'))
+load_dotenv(env_path)
 
 # get overall base directory
 REAL_BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -27,7 +32,8 @@ REAL_BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'django-insecure-2t2i(qd4p^kn&r5hp-iw-n*6rn@0&ed!y&vmh1ao@lnz7-uyh%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'www.the-bmi-calculator.com', 'the-bmi-calculator.com', 'localhost']
 
