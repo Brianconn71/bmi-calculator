@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-2t2i(qd4p^kn&r5hp-iw-n*6rn@0&ed!y&vmh1ao@lnz7-uyh%
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'www.the-bmi-calculator.com', 'the-bmi-calculator.com', 'localhost']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'www.the-bmi-calculator.com', 'the-bmi-calculator.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
