@@ -2,19 +2,18 @@
     "version": 2,
     "builds": [
       {
-        "src": "/BMICalculator/build_files.sh",
-        "use": "@vercel/static-build",
-        "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.10",
-        "distDir": "BMICalculator"
-      }
+        "src": "BMICalculator/BMICalculator/wsgi.py",
+        "use": "@vercel/python",
+        "config": { 
+            "maxLambdaSize": "15mb",
+            "runtime": "python3.10"
+          }
       },
       {
         "src": "/bmicalculator-frontend/package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "/bmicalculator-frontend/build"
+          "distDir": "build"
         }
       }
     ],
