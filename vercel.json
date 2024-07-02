@@ -14,7 +14,7 @@
         "src": "/bmicalculator-frontend/package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "/bmicalculator-frontend/build"
+          "distDir": "bmicalculator-frontend"
         }
       }
     ],
