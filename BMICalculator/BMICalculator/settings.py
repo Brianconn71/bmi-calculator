@@ -133,8 +133,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(REAL_BASE_DIR, 'bmicalculator-frontend', 'build', 'static')]
-STATIC_ROOT = os.path.join(REAL_BASE_DIR, 'build', 'static')
+STATICFILES_DIRS = [os.path.join(REAL_BASE_DIR, 'bmicalculator-frontend/build')]
+STATIC_ROOT = os.path.join(REAL_BASE_DIR, 'bmicalculator-frontend/build/staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
