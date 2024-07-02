@@ -8,16 +8,12 @@ services:
       - 8000:8000
     volumes:
       - ./BMICalculator:/app
-      - templates:/app/build
     depends_on:
       - frontend
   
   frontend:
-    build: ./bmicalculator-frontend
+    build: ./BMICalculator/bmicalculator-frontend
     ports:
       - 3000:3000
     volumes:
-      - ./bmicalculator-frontend:/app
-      - templates:/app/build
-volumes:
-  templates:
+      - ./BMICalculator/bmicalculator-frontend:/app
